@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origins & Group B Era - History of Rally Racing</title>
+    <!-- LINK TO EXTERNAL STYLESHEET -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- SITE HEADER & NAVIGATION -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand-logo">
+                <div class="brand-stripe"></div>
+                <div>
+                    <h1 class="brand-title">RALLY<span>70</span></h1>
+                    <p class="brand-subtitle">70 Years of Speed, Dirt & Endurance</p>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">1. Home</a></li>
+                    <li><a href="origins.html" class="active">2. Origins & Group B</a></li>
+                    <li><a href="modern.html">3. Modern & Tech</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="main-content">
+        <!-- ORIGINS SECTION -->
+        <section class="section-box">
+            <div class="section-title-wrap">
+                <span class="tagline">1950s - 1970s</span>
+                <h2>Origins & Early Endurance</h2>
+            </div>
+
+            <p>
+                Rallying began as simple navigation events across public roads. The legendary Monte Carlo Rally, established in 1911, tested cars against blizzard conditions across mountain passes in the Alps.
+            </p>
+            <p>
+                By the 1970s, purpose-built sports cars like the wedge-shaped <strong>Lancia Stratos</strong> proved that lightweight, mid-engine configurations were superior on twisty mountain stages.
+            </p>
+
+                <figure>
+                        <img src="images/stratos.jpg" alt="1980s Group B Rally Car racing on gravel" class="rally-img">
+                    <figcaption>Figure 2.1: Lancia Stratos HF dominating asphalt mountain rallies in 1975.</figcaption>
+                </figure>
+
+            <blockquote class="rally-quote">
+                "Group B was wild, dangerous, and unforgettable. The cars were too fast for human reaction times."
+            </blockquote>
+        </section>
+
+        <!-- MULTIMEDIA & VIDEO EMBED SECTION-->
+        <section class="section-box">
+            <div class="section-title-wrap amber">
+                <span class="tagline">The Golden Era (1982-1986)</span>
+                <h2>Multimedia Showcase: Group B Monsters</h2>
+            </div>
+
+            <p>
+                In 1982, the FIA introduced Group B regulations with virtually no limits on turbocharger boost pressure or lightweight materials.
+            </p>
+
+            <div class="video-responsive">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mkhK6FOcHPY?si=CfiK32ctmOr2caQn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+                <h3>Key Technical Advancements of Group B:</h3>
+                <ul style="list-style-type: square; padding-left: 1.25rem; color: #D1D1D1; font-family: 'Courier New', monospace; font-size: 0.85rem;">
+                    <li>Quattro All-Wheel-Drive traction replacing 2WD</li>
+                    <li>Kevlar-reinforced tubular spaceframe chassis</li>
+                    <li>Antilag turbocharger systems producing over 500 horsepower</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div>
+                <p>© 2026 History of Rally Racing Project. Built with HTML & CSS.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">index.html</a> |
+                <a href="origins.html">origins.html</a> |
+                <a href="modern.html">modern.html</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
