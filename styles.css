@@ -1,0 +1,429 @@
+/* ==========================================================================
+   THE HISTORY OF RALLY RACING - EXTERNAL STYLESHEET (styles.css)
+   Aesthetic: High-contrast Motorsport, Raw & Sharp Design
+   ========================================================================== */
+
+/* MANDATORY RULE: NO CURVED BORDERS ANYWHERE */
+*, *::before, *::after {
+    box-sizing: border-box;
+    border-radius: 0px !important;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-dark: #121212;
+    --card-bg: #1E1E1E;
+    --panel-bg: #282828;
+    --racer-red: #E50914;
+    --racer-amber: #FF9900;
+    --text-light: #EAEAEA;
+    --text-muted: #A0A0A0;
+    --border-gray: #444444;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--racer-red);
+}
+
+/* Header & Navigation Styling */
+header.site-header {
+    background-color: var(--card-bg);
+    border-bottom: 3px solid var(--racer-red);
+    padding: 1.5rem 2rem;
+}
+
+.header-container {
+    max-w: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand-stripe {
+    width: 12px;
+    height: 40px;
+    background-color: var(--racer-red);
+}
+
+.brand-title {
+    font-family: 'Courier New', monospace;
+    font-size: 1.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.brand-title span {
+    color: var(--racer-red);
+}
+
+.brand-subtitle {
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigation Menu */
+nav.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+nav.main-nav a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--panel-bg);
+    color: var(--text-light);
+    text-decoration: none;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid var(--border-gray);
+    transition: all 0.2s ease-in-out;
+}
+
+nav.main-nav a:hover,
+nav.main-nav a.active {
+    background-color: var(--racer-red);
+    color: #FFFFFF;
+    border-color: var(--racer-red);
+}
+
+/* Layout Containers & Typography */
+main.main-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    flex-grow: 1;
+}
+
+.section-box {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-gray);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-title-wrap {
+    border-left: 4px solid var(--racer-red);
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-title-wrap.amber {
+    border-left-color: var(--racer-amber);
+}
+
+.tagline {
+    font-family: 'Courier New', monospace;
+    color: var(--racer-amber);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+}
+
+h2 {
+    font-family: 'Courier New', monospace;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family: 'Courier New', monospace;
+    font-size: 1.25rem;
+    color: var(--racer-amber);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #D1D1D1;
+}
+
+/* Flexbox Grid Cards Layout */
+.flex-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.flex-card {
+    flex: 1 1 300px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-gray);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-number {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--racer-red);
+    margin-bottom: 0.5rem;
+}
+
+/* Image Placeholder Boxes */
+.img-placeholder {
+    border: 2px dashed var(--racer-amber);
+    background-color: #1A1A1A;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-family: 'Courier New', monospace;
+    margin: 1.5rem 0;
+}
+
+.img-placeholder .placeholder-title {
+    color: var(--racer-amber);
+    font-weight: bold;
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.img-placeholder .placeholder-path {
+    font-size: 0.75rem;
+    color: #888888;
+}
+
+figcaption {
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Quote Box Styling */
+blockquote.rally-quote {
+    background-color: var(--panel-bg);
+    border-left: 3px solid var(--racer-amber);
+    padding: 1rem 1.5rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: #E0E0E0;
+    margin: 1rem 0;
+}
+
+/* Tables Styling */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table.rally-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table.rally-table th, 
+table.rally-table td {
+    border: 1px solid var(--border-gray);
+    padding: 12px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+table.rally-table th {
+    background-color: var(--panel-bg);
+    color: var(--racer-amber);
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table.rally-table tr:nth-child(even) {
+    background-color: #181818;
+}
+
+table.rally-table tr:nth-child(odd) {
+    background-color: var(--card-bg);
+}
+
+/* Video Container */
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    background-color: #000000;
+    border: 1px solid var(--border-gray);
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form Styling */
+.rally-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 650px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.form-row .form-group {
+    flex: 1 1 250px;
+}
+
+label {
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--text-light);
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--border-gray);
+    padding: 0.75rem;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--racer-red);
+}
+
+button.submit-btn {
+    background-color: var(--racer-red);
+    color: #FFFFFF;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.85rem 1.5rem;
+    border: 1px solid var(--racer-red);
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.2s ease;
+}
+
+button.submit-btn:hover {
+    background-color: #000000;
+    color: var(--racer-red);
+}
+
+/* Footer Styling */
+footer.site-footer {
+    background-color: var(--card-bg);
+    border-top: 2px solid var(--racer-red);
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    color: var(--racer-amber);
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS (Requirement 3) */
+@media screen and (max-width: 768px) {
+    .header-container,
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav.main-nav ul {
+        width: 100%;
+    }
+
+    nav.main-nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .flex-grid {
+        flex-direction: column;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+}
