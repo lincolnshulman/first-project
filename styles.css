@@ -1,9 +1,7 @@
 /* ==========================================================================
    THE HISTORY OF RALLY RACING - EXTERNAL STYLESHEET (styles.css)
-   Aesthetic: High-contrast Motorsport, Raw & Sharp Design
    ========================================================================== */
 
-/* MANDATORY RULE: NO CURVED BORDERS ANYWHERE */
 *, *::before, *::after {
     box-sizing: border-box;
     border-radius: 0px !important;
@@ -396,7 +394,6 @@ footer.site-footer {
     color: var(--racer-amber);
 }
 
-/* MEDIA QUERIES FOR RESPONSIVENESS (Requirement 3) */
 @media screen and (max-width: 768px) {
     .header-container,
     .footer-container {
